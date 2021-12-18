@@ -1,0 +1,43 @@
+@import '~igniteui-angular/lib/core/styles/themes/index';
+
+$dark-button: igx-button-theme(
+    $flat-text-color: #FFCD0F, 
+    // $flat-hover-text-color: #292826, 
+    // $flat-background: #292826,
+    // $flat-hover-background: #FFCD0F,
+    $flat-hover-background: rgba(#FFCD0F, .3),
+    $flat-focus-text-color: #292826,
+    // $flat-focus-background: #FFCD0F,
+    // $flat-border-radius: 2px,
+    // $disabled-color: #16130C
+);
+
+:host {
+     ::ng-deep {
+        @include igx-button($dark-button);
+
+        .menu {
+          min-width: 100vw;
+        }
+
+        p {
+          margin: 20px;
+        }
+
+        .divide {
+          height: 135px;
+        }
+
+        .divider-sample {
+          display: flex;
+          padding: 20px;
+          
+          p {
+              margin-top: 0;
+          }
+          .mt {
+              margin-top: 20px;
+          }
+        }
+    }
+}

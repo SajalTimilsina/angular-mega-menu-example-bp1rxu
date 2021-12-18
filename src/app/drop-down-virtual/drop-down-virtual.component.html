@@ -1,0 +1,43 @@
+<div #navbar width="100%">
+	<igx-navbar actionButtonIcon="menu" title="College website" [isActionButtonVisible]="true"
+		(onAction)="actionExc($event, 3)">
+		<button igxButton="flat" (click)="actionExc($event, 1)">Menu Item</button>
+		<button igxButton="flat" (click)="actionExc($event, 2)">Menu Item</button>
+	</igx-navbar>
+	<igx-drop-down #dropdown>
+		<igx-list class="menu">
+			<igx-list-item isHeader="true">Some Header</igx-list-item>
+			<igx-list-item>Item 1</igx-list-item>
+			<igx-list-item>Item 2</igx-list-item>
+			<igx-list-item>Item 3</igx-list-item>
+		</igx-list>
+	</igx-drop-down>
+	<igx-drop-down #dropdown2>
+		<div class="divider-sample">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, culpa delectus eius fuga ipsa iste
+				laborum nemo, numquam omnis perferendis soluta sunt. Animi asperiores aspernatur assumenda doloribus
+				eligendi officiis veritatis.</p>
+			<igx-divider></igx-divider>
+			<p class="mt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, culpa delectus eius fuga
+				ipsa iste laborum nemo, numquam omnis perferendis soluta sunt. Animi asperiores aspernatur assumenda
+				doloribus eligendi officiis veritatis.</p>
+		</div>
+	</igx-drop-down>
+	<igx-drop-down #dropdown3>
+		<div class="divider-sample">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, culpa delectus eius fuga ipsa iste
+				laborum nemo, numquam omnis perferendis soluta sunt. Animi asperiores aspernatur assumenda doloribus
+				eligendi officiis veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, culpa
+				delectus eius fuga ipsa iste laborum nemo, numquam omnis perferendis soluta sunt. Animi asperiores
+				aspernatur assumenda doloribus eligendi officiis veritatis.</p>
+			<igx-divider></igx-divider>
+			<igx-list class="menu">
+				<igx-list-item>Item 1</igx-list-item>
+				<igx-list-item>Item 2</igx-list-item>
+				<igx-list-item>Item 3</igx-list-item>
+			</igx-list>
+			<igx-divider></igx-divider>
+			<button igxButton="flat">Some button</button>
+		</div>
+	</igx-drop-down>
+</div>
